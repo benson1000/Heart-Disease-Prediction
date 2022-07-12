@@ -2,10 +2,6 @@
 # coding: utf-8
 
 # # Importing libraries
-
-# In[1]:
-
-
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
@@ -16,51 +12,18 @@ import warnings
 warnings.filterwarnings("ignore")
 from pandas.plotting import scatter_matrix
 
-
-# In[2]:
-
-
 plt.style.use("ggplot")
-
-
-# In[3]:
-
 
 data=pd.read_csv("heart_2020_cleaned.csv")
 
-
-# In[4]:
-
-
-data   #the dataset to use.
-
-
-# In[5]:
-
-
+data   #the dataset 
 data.head() # displays the first five rows of the data
-
-
-# In[6]:
-
 
 data.tail()  #displays the last five rows of the data
 
-
-# In[7]:
-
-
 data.shape  #the shape of the dataset, the train dataset and the test dataset.
 
-
-# In[8]:
-
-
 data.dtypes.value_counts()  #it returns the number of occurances of each datatype in the dataset.
-
-
-# In[9]:
-
 
 data.columns   #it displays the columns in the dataset.
 
